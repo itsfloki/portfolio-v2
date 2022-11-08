@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       </Head>
 
       <main>
+        <Hero />
         <Navbar />
       </main>
 
