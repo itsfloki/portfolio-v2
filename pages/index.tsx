@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
-export default function Home() {
+import Navbar from '../components/Navbar'
+
+const Home = () => {
   return (
     <div>
       <Head>
@@ -10,10 +12,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Hello World</h1>
+        <Navbar />
       </main>
 
       <footer />
     </div>
   )
 }
+export default Home
