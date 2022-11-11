@@ -60,7 +60,7 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
           </Heading>
           <Text
             textAlign={'start'}
-            color={useColorModeValue('gray.700', 'gray.400')}
+            color={'gray.700'}
             px={3}
           >
             {description}
@@ -71,7 +71,7 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
                 key={`${title}-${tag}-${idx}`}
                 px={2}
                 py={1}
-                bg={useColorModeValue('gray.50', 'gray.800')}
+                bg={'gray.50'}
                 fontWeight={'400'}
               >
                 {tag}
