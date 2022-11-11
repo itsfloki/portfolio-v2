@@ -5,6 +5,8 @@ import ParticlesContainer from './ParticlesContainer'
 
 import { containerStyle, headingStyle, subHeadingStyle } from './style'
 
+import { BRAND_NAME, BRAND_SUB_TEXT } from '../../utils'
+
 interface HeroProps {}
 
 const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
@@ -12,10 +14,8 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
     <div>
       <Box sx={containerStyle}>
         <Box>
-          <Heading sx={headingStyle}>Abhijit Paul</Heading>
-          <Text sx={subHeadingStyle}>
-            Indian full stack developer for Haskell, Plutus & Solidity
-          </Text>
+          <Heading sx={headingStyle}>{BRAND_NAME}</Heading>
+          <Text sx={subHeadingStyle}>{BRAND_SUB_TEXT}</Text>
         </Box>
         <Button
           letterSpacing={'2px'}
