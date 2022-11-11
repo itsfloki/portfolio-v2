@@ -1,6 +1,7 @@
 import type { NextComponentType, NextPageContext } from 'next'
 import {
   Box,
+  Container,
   Flex,
   HStack,
   IconButton,
@@ -12,7 +13,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
-import Container from '../Container'
 import NavLink from './NavLink'
 
 import { NavLinks, BRAND_NAME } from '../../utils'
@@ -22,8 +22,13 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.900')}>
-      <Container>
+    <Box mb="3rem">
+      <Container
+        maxW={'7xl'}
+        bg={'transparent'}
+        backdropFilter="blur(5px)"
+        borderRadius={'0.375rem'}
+      >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -33,7 +38,7 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>{BRAND_NAME}</Box>
+            <Box color="white">{BRAND_NAME}</Box>
             <HStack
               as={'nav'}
               spacing={4}
@@ -46,10 +51,6 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
           </HStack>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={3}>
-              <Button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
-
               {/* Add social icons here */}
             </Stack>
           </Flex>

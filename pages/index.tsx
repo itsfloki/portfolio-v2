@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import ProjectContainer from '../components/ProjectContainer'
+
 
 const Home = () => {
   return (
@@ -15,6 +17,7 @@ const Home = () => {
       <main>
         <Hero />
         <Navbar />
+        <ProjectContainer />
       </main>
 
       <footer />

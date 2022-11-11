@@ -21,7 +21,6 @@ export const headingStyle: SystemStyleObject = {
 }
 
 export const subHeadingStyle: SystemStyleObject = {
-  color: 'white',
   fontWeight: '400',
   fontSize: '1rem',
   lineHeight: 1.5,
