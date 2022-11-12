@@ -6,10 +6,8 @@ import {
   Flex,
   Heading,
   Image,
-  Link,
   Stack,
   Text,
-  useColorModeValue,
 } from '@chakra-ui/react'
 
 interface ProjectCardProps {
@@ -58,11 +56,7 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
           >
             {title}
           </Heading>
-          <Text
-            textAlign={'start'}
-            color={'gray.700'}
-            px={3}
-          >
+          <Text textAlign={'start'} color={'gray.700'} px={3}>
             {description}
           </Text>
           <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>

@@ -3,9 +3,8 @@ import { Box, Heading, Text, Button } from '@chakra-ui/react'
 
 import ParticlesContainer from './ParticlesContainer'
 
-import { containerStyle, headingStyle, subHeadingStyle } from './style'
-
 import { BRAND_NAME, BRAND_SUB_TEXT } from '../../utils'
+import { containerStyle, headingStyle, subHeadingStyle } from './style'
 
 interface HeroProps {}
 

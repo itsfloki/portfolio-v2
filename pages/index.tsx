@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
+import About from '../components/About'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import ProjectContainer from '../components/ProjectContainer'
-
 
 const Home = () => {
   return (
@@ -18,6 +18,7 @@ const Home = () => {
         <Hero />
         <Navbar />
         <ProjectContainer />
+        <About />
       </main>
 
       <footer />

@@ -5,24 +5,20 @@ import {
   Flex,
   HStack,
   IconButton,
-  Button,
   useDisclosure,
-  useColorModeValue,
-  useColorMode,
   Stack,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 import NavLink from './NavLink'
 
 import { NavLinks, BRAND_NAME } from '../../utils'
 
 const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box mb="3rem">
+    <Box>
       <Container
         maxW={'7xl'}
         bg={'transparent'}

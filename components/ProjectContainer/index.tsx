@@ -1,7 +1,8 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import { Container, Grid, GridItem, Flex, Box, Text } from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react'
 
 import ProjectCard from './ProjectCard'
+import SectionWrapper from '../SectionWrapper'
 
 import { project_lists } from '../../utils'
 
@@ -13,11 +14,9 @@ const ProjectContainer: NextComponentType<
   ProjectContainerProps
 > = () => {
   return (
-    <Container
-      maxW={'7xl'}
-      borderRadius={'0.375rem'}
-      bg={'transparent'}
-      backdropFilter="blur(10px)"
+    <SectionWrapper
+      title="Projects"
+      desc="Get to know about my work before you dive into my details 🚀"
     >
       <Grid
         templateColumns={{
@@ -33,7 +32,7 @@ const ProjectContainer: NextComponentType<
           </GridItem>
         ))}
       </Grid>
-    </Container>
+    </SectionWrapper>
   )
 }
 

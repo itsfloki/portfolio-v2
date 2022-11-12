@@ -35,3 +35,7 @@ export const project_lists = [
     tags: ['html', 'css', 'javascript'],
   },
 ]
+
+export const aboutMe = `I am a software and web engineer dedicated to learning JavaScript for client-server architectures. Now I am pursuing my bachelor's degree in computer science. I have learned almost all the languages such as HTML, CSS, JS, React, Node, MongoDB, etc., and gathered some excellent skills in Web Development.`
+
+export const profileImage = `https://github.com/${GITHUB_USERNAME}/images/blob/main/abhijit.jpg?raw=true`
