@@ -15,6 +15,7 @@ const ProjectContainer: NextComponentType<
 > = () => {
   return (
     <SectionWrapper
+      id="projects"
       title="Projects"
       desc="Get to know about my work before you dive into my details 🚀"
     >

@@ -9,7 +9,7 @@ interface AboutProps {}
 
 const About: NextComponentType<NextPageContext, {}, AboutProps> = () => {
   return (
-    <SectionWrapper title="About" desc="Get to know about me 😎">
+    <SectionWrapper title="About" desc="Get to know about me 😎" id='about'>
       <Container>
         <Center>
           <Image

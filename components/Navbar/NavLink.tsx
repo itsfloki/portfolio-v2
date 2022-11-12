@@ -1,13 +1,12 @@
-import { ReactNode } from 'react'
 import type { NextComponentType, NextPageContext } from 'next'
 import { Link } from '@chakra-ui/react'
 
 interface NavLinkProps {
-  children: ReactNode
+  label: string
 }
 
 const NavLink: NextComponentType<NextPageContext, {}, NavLinkProps> = ({
-  children,
+  label,
 }) => (
   <Link
     px={2}
@@ -18,9 +17,9 @@ const NavLink: NextComponentType<NextPageContext, {}, NavLinkProps> = ({
       textDecoration: 'none',
       bg: "whiteAlpha.200",
     }}
-    href={'#'}
+    href={`#${label.toLowerCase()}`}
   >
-    {children}
+    {label}
   </Link>
 )
 

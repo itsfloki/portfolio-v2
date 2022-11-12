@@ -41,7 +41,7 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
               display={{ base: 'none', md: 'flex' }}
             >
               {NavLinks.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link} label={link} />
               ))}
             </HStack>
           </HStack>
@@ -56,7 +56,7 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {NavLinks.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link} label={link} />
               ))}
             </Stack>
           </Box>
