@@ -1,7 +1,9 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import { Box, Heading, Text, Button } from '@chakra-ui/react'
+import { Box, Heading, Stack, Text, Button } from '@chakra-ui/react'
+import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
 
 import ParticlesContainer from './ParticlesContainer'
+import SocialButton from './SocialButton'
 
 import { BRAND_NAME, BRAND_SUB_TEXT } from '../../utils'
 import { containerStyle, headingStyle, subHeadingStyle } from './style'
@@ -14,8 +16,35 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
       <Box sx={containerStyle}>
         <Box>
           <Heading sx={headingStyle}>{BRAND_NAME}</Heading>
-          <Text sx={subHeadingStyle} color="whiteAlpha.800">{BRAND_SUB_TEXT}</Text>
+          <Text sx={subHeadingStyle} color="whiteAlpha.800">
+            {BRAND_SUB_TEXT}
+          </Text>
+
+          <Stack direction={'row'} spacing={4} justify="center" mt="1.4rem">
+            <SocialButton label={'Github'} href="https://github.com/prajnastra">
+              <FaGithub color="#fff" />
+            </SocialButton>
+            <SocialButton
+              label={'YouTube'}
+              href="https://www.youtube.com/@itsabhijit"
+            >
+              <FaYoutube color="#fff" />
+            </SocialButton>
+            <SocialButton
+              label={'Instagram'}
+              href="https://www.instagram.com/thatsabhijit"
+            >
+              <FaInstagram color="#fff" />
+            </SocialButton>
+            <SocialButton
+              label={'Twitter'}
+              href="https://twitter.com/prajnastra"
+            >
+              <FaTwitter color="#fff" />
+            </SocialButton>
+          </Stack>
         </Box>
+
         <Button
           letterSpacing={'2px'}
           fontWeight="400"
@@ -24,7 +53,7 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
           color="white"
           _hover={{
             textDecoration: 'none',
-            bg: "whiteAlpha.300",
+            bg: 'whiteAlpha.300',
           }}
         >
           Know More

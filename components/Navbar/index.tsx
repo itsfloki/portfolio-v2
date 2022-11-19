@@ -6,16 +6,23 @@ import {
   HStack,
   IconButton,
   useDisclosure,
+  useBreakpointValue,
   Stack,
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
 
+import SocialButton from '../Hero/SocialButton'
 import NavLink from './NavLink'
 
 import { NavLinks, BRAND_NAME } from '../../utils'
 
 const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const showSocialMedia = useBreakpointValue({
+    base: 'none',
+    md: 'block',
+  })
 
   return (
     <Box>
@@ -46,8 +53,36 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <Stack direction={'row'} spacing={3}>
-              {/* Add social icons here */}
+            <Stack
+              direction={'row'}
+              spacing={3}
+              justify="center"
+              display={showSocialMedia}
+            >
+              <SocialButton
+                label={'Github'}
+                href="https://github.com/prajnastra"
+              >
+                <FaGithub color="#fff" />
+              </SocialButton>
+              <SocialButton
+                label={'YouTube'}
+                href="https://www.youtube.com/@itsabhijit"
+              >
+                <FaYoutube color="#fff" />
+              </SocialButton>
+              <SocialButton
+                label={'Instagram'}
+                href="https://www.instagram.com/thatsabhijit"
+              >
+                <FaInstagram color="#fff" />
+              </SocialButton>
+              <SocialButton
+                label={'Twitter'}
+                href="https://twitter.com/prajnastra"
+              >
+                <FaTwitter color="#fff" />
+              </SocialButton>
             </Stack>
           </Flex>
         </Flex>
