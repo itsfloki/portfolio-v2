@@ -36,6 +36,6 @@ export const project_lists = [
   },
 ]
 
-export const aboutMe = `I am a software and web engineer dedicated to learning JavaScript for client-server architectures. Now I am pursuing my bachelor's degree in computer science. I have learned almost all the languages such as HTML, CSS, JS, React, Node, MongoDB, etc., and gathered some excellent skills in Web Development.`
+export const aboutMe = `Hi there, I am Abhijit an aspiring Blockchain Developer. Now I am pursuing my bachelor's degree in CS. Since 3 years I have been experimenting with frontend, backend & blockchain development & built some cool projects. Currently, I am learning Haskell & Plutus.`
 
 export const profileImage = `https://github.com/${GITHUB_USERNAME}/images/blob/main/abhijit.jpg?raw=true`
