@@ -36,6 +36,6 @@ export const project_lists = [
   },
 ]
 
-export const aboutMe = `Hi there, I am Abhijit an aspiring Blockchain Developer. Now I am pursuing my bachelor's degree in CS. Since 3 years I have been experimenting with frontend, backend & blockchain development & built some cool projects. Currently, I am learning Haskell & Plutus.`
+export const aboutMe = `Hi there, I am Abhijit an aspiring Blockchain Developer. Now I am pursuing my bachelor's degree in CS. Since 4 years I have been experimenting with frontend, backend & blockchain development & built some cool projects. Currently, I am learning Rust & Vue.js.`
 
 export const profileImage = `https://github.com/${GITHUB_USERNAME}/images/blob/main/abhijit.jpg?raw=true`
