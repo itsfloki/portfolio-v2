@@ -2,7 +2,7 @@ const GITHUB_USERNAME = 'prajnastra'
 
 export const BRAND_NAME = 'Abhijit Paul'
 export const BRAND_SUB_TEXT =
-  'Full stack developer for Cardano & Ethereum Dapps'
+  'Full stack developer for web2.0 & blockchain'
 
 export const NavLinks = ['Education', 'Projects', 'About']
 
@@ -11,10 +11,10 @@ export const project_lists = [
     title: 'Shopyle',
     description:
       'Shopyle is an eCommerce store for selling t-shirts online. I have integrated Braintree Paypal Payment method in this app. It uses jwt user authentication and mongoDB for storing user data.',
-    github_link: `https://github.com/${GITHUB_USERNAME}/shopyle.git`,
-    live_link: 'https://shopyle.netlify.app/',
+    github_link: `https://github.com/${GITHUB_USERNAME}/shopyle-v2.git`,
+    live_link: 'https://shiny-mermaid-0a6252.netlify.app',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj1.jpg?raw=true`,
-    tags: ['React', 'Node', 'Mongodb'],
+    tags: ['Next.js', 'Express.js', 'Mongodb'],
   },
   {
     title: 'Indigram',

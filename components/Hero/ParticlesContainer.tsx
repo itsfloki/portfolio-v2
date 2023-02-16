@@ -81,7 +81,7 @@ const ParticlesContainer: NextComponentType<
         interactivity: {
           events: {
             onhover: {
-              enable: true,
+              enable: false,
               mode: 'grab',
               parallax: {
                 enable: true,
@@ -90,7 +90,7 @@ const ParticlesContainer: NextComponentType<
               },
             },
             onclick: {
-              enable: true,
+              enable: false,
               mode: 'push',
             },
             resize: true,
