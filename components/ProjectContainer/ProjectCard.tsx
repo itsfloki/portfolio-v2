@@ -1,5 +1,6 @@
 import type { NextComponentType, NextPageContext } from 'next'
 import {
+  Box,
   Badge,
   Button,
   Center,
@@ -35,6 +36,7 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
         bg={'white'}
         boxShadow={'2xl'}
         padding={4}
+        h="350px"
       >
         <Flex flex={1} bg="blue.200">
           <Image objectFit="cover" boxSize="100%" src={image} alt={title} />
@@ -42,36 +44,38 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
         <Stack
           flex={1}
           flexDirection="column"
-          justifyContent="center"
+          justifyContent="space-between"
           alignItems="center"
           p={1}
           pt={2}
         >
-          <Heading
-            px={3}
-            fontSize={'2xl'}
-            fontFamily={'body'}
-            textAlign={'start'}
-            w="100%"
-          >
-            {title}
-          </Heading>
-          <Text textAlign={'start'} color={'gray.700'} px={3}>
-            {description}
-          </Text>
-          <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-            {tags.map((tag, idx) => (
-              <Badge
-                key={`${title}-${tag}-${idx}`}
-                px={2}
-                py={1}
-                bg={'gray.50'}
-                fontWeight={'400'}
-              >
-                {tag}
-              </Badge>
-            ))}
-          </Stack>
+          <Box>
+            <Heading
+              px={3}
+              fontSize={'2xl'}
+              fontFamily={'body'}
+              textAlign={'start'}
+              w="100%"
+            >
+              {title}
+            </Heading>
+            <Text textAlign={'start'} color={'gray.700'} px={3}>
+              {description}
+            </Text>
+            <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
+              {tags.map((tag, idx) => (
+                <Badge
+                  key={`${title}-${tag}-${idx}`}
+                  px={2}
+                  py={1}
+                  bg={'gray.50'}
+                  fontWeight={'400'}
+                >
+                  {tag}
+                </Badge>
+              ))}
+            </Stack>
+          </Box>
 
           <Stack
             width={'100%'}

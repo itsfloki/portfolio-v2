@@ -1,8 +1,7 @@
 const GITHUB_USERNAME = 'prajnastra'
 
 export const BRAND_NAME = 'Abhijit Paul'
-export const BRAND_SUB_TEXT =
-  'Full stack developer for web2.0 & blockchain'
+export const BRAND_SUB_TEXT = 'Full stack developer for web2.0 & blockchain'
 
 export const NavLinks = ['Education', 'Projects', 'About']
 
@@ -15,6 +14,15 @@ export const project_lists = [
     live_link: 'https://shiny-mermaid-0a6252.netlify.app',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj1.jpg?raw=true`,
     tags: ['Next.js', 'Express.js', 'Mongodb'],
+  },
+  {
+    title: 'Tweetx',
+    description:
+      'A twitter clone where anyone can share his views on a certain topic in simple way.',
+    github_link: `https://github.com/${GITHUB_USERNAME}/tweetx.git`,
+    live_link: 'https://tweetx-dev.netlify.app/',
+    image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj4.png?raw=true`,
+    tags: ['Next.js', 'Django', 'MongoDB'],
   },
   {
     title: 'Indigram',
