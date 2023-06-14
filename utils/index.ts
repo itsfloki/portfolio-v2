@@ -1,4 +1,4 @@
-const GITHUB_USERNAME = 'prajnastra'
+const GITHUB_USERNAME = 'itsfloki'
 
 export const BRAND_NAME = 'Abhijit Paul'
 export const BRAND_SUB_TEXT = 'Full stack developer for web2.0 & blockchain'

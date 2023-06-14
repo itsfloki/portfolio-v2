@@ -21,7 +21,7 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
           </Text>
 
           <Stack direction={'row'} spacing={4} justify="center" mt="1.4rem">
-            <SocialButton label={'Github'} href="https://github.com/prajnastra">
+            <SocialButton label={'Github'} href="https://github.com/itsfloki">
               <FaGithub color="#fff" />
             </SocialButton>
             <SocialButton
