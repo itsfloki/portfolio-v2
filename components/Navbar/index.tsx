@@ -1,15 +1,19 @@
 import type { NextComponentType, NextPageContext } from 'next'
 import {
   Box,
+  Button,
   Container,
   Flex,
   HStack,
+  Heading,
   IconButton,
+  Stack,
   useDisclosure,
   useBreakpointValue,
-  Stack,
+  useColorMode,
+  useColorModeValue,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
 
 import SocialButton from '../Hero/SocialButton'
@@ -19,20 +23,21 @@ import { NavLinks, BRAND_NAME } from '../../utils'
 
 const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const { colorMode, toggleColorMode } = useColorMode()
   const showSocialMedia = useBreakpointValue({
     base: 'none',
     md: 'block',
   })
 
   return (
-    <Box>
+    <Box my={5} pos={'fixed'} w={'full'} zIndex={1}>
       <Container
-        maxW={'7xl'}
-        bg={'transparent'}
-        backdropFilter="blur(5px)"
-        borderRadius={'0.375rem'}
+        bg={useColorModeValue('gray.100', 'gray.900')}
+        maxW={'4xl'}
+        borderRadius={'full'}
+        px={10}
       >
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+        <Flex h={14} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -41,7 +46,10 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box color="white">{BRAND_NAME}</Box>
+            <Heading size={'sm'} textTransform={'uppercase'}>
+              {BRAND_NAME}
+            </Heading>
+
             <HStack
               as={'nav'}
               spacing={4}
@@ -59,30 +67,14 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
               justify="center"
               display={showSocialMedia}
             >
-              <SocialButton
-                label={'Github'}
-                href="https://github.com/prajnastra"
+              <Button
+                onClick={toggleColorMode}
+                rounded={'full'}
+                size={'sm'}
+                variant={'ghost'}
               >
-                <FaGithub color="#fff" />
-              </SocialButton>
-              <SocialButton
-                label={'YouTube'}
-                href="https://www.youtube.com/@itsabhijit"
-              >
-                <FaYoutube color="#fff" />
-              </SocialButton>
-              <SocialButton
-                label={'Instagram'}
-                href="https://www.instagram.com/thatsabhijit"
-              >
-                <FaInstagram color="#fff" />
-              </SocialButton>
-              <SocialButton
-                label={'Twitter'}
-                href="https://twitter.com/prajnastra"
-              >
-                <FaTwitter color="#fff" />
-              </SocialButton>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
             </Stack>
           </Flex>
         </Flex>

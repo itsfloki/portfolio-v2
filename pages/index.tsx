@@ -16,8 +16,8 @@ const Home = () => {
       </Head>
 
       <main>
-        <Hero />
         <Navbar />
+        <Hero />
         <ProjectContainer />
         <About />
       </main>

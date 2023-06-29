@@ -3,7 +3,7 @@ const GITHUB_USERNAME = 'itsfloki'
 export const BRAND_NAME = 'Abhijit Paul'
 export const BRAND_SUB_TEXT = 'Full stack developer for web2.0 & blockchain'
 
-export const NavLinks = ['Education', 'Projects', 'About']
+export const NavLinks = ['About', 'Blog', 'Projects']
 
 export const project_lists = [
   {

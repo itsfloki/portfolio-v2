@@ -1,5 +1,5 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import { Link } from '@chakra-ui/react'
+import { Link, useColorModeValue } from '@chakra-ui/react'
 
 interface NavLinkProps {
   label: string
@@ -9,13 +9,12 @@ const NavLink: NextComponentType<NextPageContext, {}, NavLinkProps> = ({
   label,
 }) => (
   <Link
-    px={2}
+    px={3}
     py={1}
-    rounded={'md'}
-    color="whiteAlpha.800"
+    rounded={'full'}
     _hover={{
       textDecoration: 'none',
-      bg: "whiteAlpha.200",
+      bg: useColorModeValue('gray.200', 'gray.700'),
     }}
     href={`#${label.toLowerCase()}`}
   >

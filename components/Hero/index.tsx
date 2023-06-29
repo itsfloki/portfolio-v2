@@ -60,7 +60,7 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
         </Button>
       </Box>
 
-      <ParticlesContainer />
+      {/* <ParticlesContainer /> */}
     </div>
   )
 }
