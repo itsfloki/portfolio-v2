@@ -1,12 +1,15 @@
 import { SystemStyleObject } from '@chakra-ui/react'
 
 export const containerStyle: SystemStyleObject = {
-  height: '100vh',
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'flex-start',
   alignItems: 'center',
-  flexDir: 'column',
+  flexDir: 'row',
   gap: '1.4rem',
+  marginTop: '11rem',
+  // border: "1px solid gray",
+  maxW: '4xl',
+  mx: 'auto',
 }
 
 export const headingStyle: SystemStyleObject = {
@@ -21,11 +24,5 @@ export const headingStyle: SystemStyleObject = {
 }
 
 export const subHeadingStyle: SystemStyleObject = {
-  fontWeight: '400',
   fontSize: { base: '0.9rem', md: '1rem' },
-  lineHeight: 1.5,
-  letterSpacing: '3.5px',
-  textTransform: 'uppercase',
-  opacity: 0.7,
-  textAlign: 'center',
 }

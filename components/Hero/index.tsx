@@ -1,9 +1,24 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import { Box, Heading, Stack, Text, Button } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
+import {
+  Box,
+  Heading,
+  Stack,
+  Text,
+  Button,
+  chakra,
+  useColorModeValue,
+} from '@chakra-ui/react'
+import { EmailIcon } from '@chakra-ui/icons'
+import {
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaGithub,
+  FaLinkedinIn,
+} from 'react-icons/fa'
 
-import ParticlesContainer from './ParticlesContainer'
 import SocialButton from './SocialButton'
+import ProfileImage from './ProfileImage'
 
 import { BRAND_NAME, BRAND_SUB_TEXT } from '../../utils'
 import { containerStyle, headingStyle, subHeadingStyle } from './style'
@@ -12,56 +27,32 @@ interface HeroProps {}
 
 const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
   return (
-    <div>
-      <Box sx={containerStyle}>
-        <Box>
-          <Heading sx={headingStyle}>{BRAND_NAME}</Heading>
-          <Text sx={subHeadingStyle} color="whiteAlpha.800">
-            {BRAND_SUB_TEXT}
-          </Text>
+    <Box sx={containerStyle}>
+      <ProfileImage />
 
-          <Stack direction={'row'} spacing={4} justify="center" mt="1.4rem">
-            <SocialButton label={'Github'} href="https://github.com/itsfloki">
-              <FaGithub color="#fff" />
-            </SocialButton>
-            <SocialButton
-              label={'YouTube'}
-              href="https://www.youtube.com/@itsabhijit"
-            >
-              <FaYoutube color="#fff" />
-            </SocialButton>
-            <SocialButton
-              label={'Instagram'}
-              href="https://www.instagram.com/thatsabhijit"
-            >
-              <FaInstagram color="#fff" />
-            </SocialButton>
-            <SocialButton
-              label={'Twitter'}
-              href="https://twitter.com/prajnastra"
-            >
-              <FaTwitter color="#fff" />
-            </SocialButton>
-          </Stack>
-        </Box>
+      <Box maxW={'65%'} ml={'1rem'}>
+        <Heading size={'lg'} color={'gray'}>
+          <chakra.span color={useColorModeValue('black', 'white')}>
+            Hey, I'm Abhijit.
+          </chakra.span>
+          {BRAND_SUB_TEXT}
+        </Heading>
 
-        <Button
-          letterSpacing={'2px'}
-          fontWeight="400"
-          fontSize={'13px'}
-          bg="whiteAlpha.200"
-          color="white"
-          _hover={{
-            textDecoration: 'none',
-            bg: 'whiteAlpha.300',
-          }}
-        >
-          Know More
-        </Button>
+        <Stack direction={'row'} spacing={4} justify="flex-start" mt="1.4rem">
+          <Button leftIcon={<FaGithub />} variant={'ghost'} size={'sm'}>
+            Github
+          </Button>
+
+          <Button leftIcon={<FaLinkedinIn />} variant={'ghost'} size={'sm'}>
+            LinkedIn
+          </Button>
+
+          <Button leftIcon={<FaTwitter />} variant={'ghost'} size={'sm'}>
+            Twitter
+          </Button>
+        </Stack>
       </Box>
-
-      {/* <ParticlesContainer /> */}
-    </div>
+    </Box>
   )
 }
 

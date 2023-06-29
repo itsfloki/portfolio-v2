@@ -1,7 +1,8 @@
 const GITHUB_USERNAME = 'itsfloki'
 
 export const BRAND_NAME = 'Abhijit Paul'
-export const BRAND_SUB_TEXT = 'Full stack developer for web2.0 & blockchain'
+export const BRAND_SUB_TEXT =
+  "I'm a blockchain developer and rustlang enthusiast."
 
 export const NavLinks = ['About', 'Blog', 'Projects']
 

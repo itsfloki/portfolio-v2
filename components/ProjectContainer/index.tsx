@@ -14,21 +14,23 @@ const ProjectContainer: NextComponentType<
   ProjectContainerProps
 > = () => {
   return (
-    <SectionWrapper
-      id="projects"
-      title="Projects"
-      desc="Get to know about my work before you dive into my details 🚀"
-    >
+    <SectionWrapper id="projects" title="My Projects" desc="">
       <Grid
         templateColumns={{
           base: 'repeat(1, 1fr)',
           md: 'repeat(1, 1fr)',
           lg: 'repeat(2, 1fr)',
         }}
-        gap={20}
+        gap={10}
+        border={'1px solid green'}
+        w={'full'}
       >
         {project_lists.map((project) => (
-          <GridItem w="100%" key={`${project.title}`}>
+          <GridItem
+            key={`${project.title}`}
+            bg={'gray.700'}
+            border={'2px solid red'}
+          >
             <ProjectCard config={project} />
           </GridItem>
         ))}
