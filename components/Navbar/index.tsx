@@ -14,9 +14,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
-import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
 
-import SocialButton from '../Hero/SocialButton'
 import NavLink from './NavLink'
 
 import { NavLinks, BRAND_NAME } from '../../utils'
