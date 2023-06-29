@@ -28,7 +28,7 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   })
 
   return (
-    <Box my={5} pos={'fixed'} w={'full'} zIndex={1}>
+    <Box my={5} pos={'fixed'} w={'full'} top={0} zIndex={1}>
       <Container
         bg={useColorModeValue('gray.100', 'gray.900')}
         maxW={'4xl'}
