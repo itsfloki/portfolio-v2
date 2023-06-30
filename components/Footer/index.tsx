@@ -15,7 +15,7 @@ const Footer: NextComponentType<NextPageContext, {}, FooterProps> = () => {
         py={4}
       >
         <Text color="whiteAlpha.700" textAlign="center">
-          © {new Date().getFullYear()} Abhijit Paul. All rights reserved
+          © {new Date().getFullYear()} Abhijit Paul
         </Text>
       </Container>
     </footer>

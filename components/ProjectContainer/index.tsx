@@ -21,16 +21,11 @@ const ProjectContainer: NextComponentType<
           md: 'repeat(1, 1fr)',
           lg: 'repeat(2, 1fr)',
         }}
-        gap={10}
-        border={'1px solid green'}
+        gap={5}
         w={'full'}
       >
         {project_lists.map((project) => (
-          <GridItem
-            key={`${project.title}`}
-            bg={'gray.700'}
-            border={'2px solid red'}
-          >
+          <GridItem key={`${project.title}`}>
             <ProjectCard config={project} />
           </GridItem>
         ))}

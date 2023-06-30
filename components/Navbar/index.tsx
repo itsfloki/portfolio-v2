@@ -28,11 +28,14 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   })
 
   return (
-    <Box my={5} pos={'fixed'} w={'full'} top={0} zIndex={1}>
+    <Box my={{ xs: 0, md: 5 }} pos={'fixed'} w={'full'} top={0} zIndex={1}>
       <Container
         bg={useColorModeValue('gray.100', 'gray.900')}
         maxW={'4xl'}
-        borderRadius={'full'}
+        borderRadius={{
+          xs: 'none',
+          md: 'full',
+        }}
         px={10}
       >
         <Flex h={14} alignItems={'center'} justifyContent={'space-between'}>

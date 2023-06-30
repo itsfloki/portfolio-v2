@@ -19,7 +19,6 @@ const Home = () => {
         <Navbar />
         <Hero />
         <ProjectContainer />
-        <About />
       </main>
 
       <Footer />

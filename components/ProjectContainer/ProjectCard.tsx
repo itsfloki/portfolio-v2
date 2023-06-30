@@ -9,6 +9,7 @@ import {
   Image,
   Stack,
   Text,
+  useColorModeValue,
 } from '@chakra-ui/react'
 
 interface ProjectCardProps {
@@ -29,7 +30,16 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
 
   return (
     <>
-      <Image objectFit="cover" w="full" h="full" src={image} alt={title} />
+      <Image
+        objectFit="cover"
+        w="full"
+        h="400px"
+        src={image}
+        alt={title}
+        borderRadius="md"
+        border="3px solid"
+        borderColor={useColorModeValue('gray.100', 'gray.900')}
+      />
     </>
   )
 }

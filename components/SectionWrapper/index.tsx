@@ -18,8 +18,10 @@ const SectionWrapper: NextComponentType<
 > = ({ children, title, desc, id }) => {
   return (
     <Container id={id || ''} maxW={'4xl'} borderRadius={'0.375rem'} mt="3rem">
-      <Box mb="5rem" pt="5rem">
-        <Heading size={'lg'}>{title}</Heading>
+      <Box pt="2rem">
+        <Heading size={'lg'} mb="5">
+          {title}
+        </Heading>
         <Text>{desc || ''}</Text>
       </Box>
       {children}
