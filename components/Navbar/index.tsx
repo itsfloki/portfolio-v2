@@ -9,7 +9,6 @@ import {
   IconButton,
   Stack,
   useDisclosure,
-  useBreakpointValue,
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react'
@@ -41,6 +40,8 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
+            rounded={'full'}
+            variant={'ghost'}
           />
           <HStack spacing={8} alignItems={'center'}>
             <Heading size={'sm'} textTransform={'uppercase'}>

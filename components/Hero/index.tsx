@@ -44,6 +44,9 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
             variant={'ghost'}
             size={'sm'}
             rounded="full"
+            as={'a'}
+            href="https://github.com/itsfloki"
+            target={'_blank'}
           >
             Github
           </Button>
@@ -53,6 +56,9 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
             variant={'ghost'}
             size={'sm'}
             rounded="full"
+            as={'a'}
+            href="https://www.linkedin.com/in/itsfloki"
+            target={'_blank'}
           >
             LinkedIn
           </Button>
@@ -62,6 +68,9 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
             variant={'ghost'}
             size={'sm'}
             rounded="full"
+            as={'a'}
+            href="https://twitter.com/prajnastra"
+            target={'_blank'}
           >
             Twitter
           </Button>
