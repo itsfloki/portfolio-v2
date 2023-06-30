@@ -22,10 +22,6 @@ import { NavLinks, BRAND_NAME } from '../../utils'
 const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const { colorMode, toggleColorMode } = useColorMode()
-  const showSocialMedia = useBreakpointValue({
-    base: 'none',
-    md: 'block',
-  })
 
   return (
     <Box my={{ xs: 0, md: 5 }} pos={'fixed'} w={'full'} top={0} zIndex={1}>
@@ -62,12 +58,7 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <Stack
-              direction={'row'}
-              spacing={3}
-              justify="center"
-              display={showSocialMedia}
-            >
+            <Stack direction={'row'} spacing={3} justify="center">
               <Button
                 onClick={toggleColorMode}
                 rounded={'full'}

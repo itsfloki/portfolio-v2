@@ -9,7 +9,10 @@ export const containerStyle: SystemStyleObject = {
     md: 'row',
   },
   gap: '1.4rem',
-  marginTop: '11rem',
+  marginTop: {
+    xs: '7rem',
+    md: '11rem',
+  },
   maxW: '4xl',
   mx: 'auto',
 }

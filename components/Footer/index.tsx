@@ -1,5 +1,5 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import { Container, Text } from '@chakra-ui/react'
+import { Container, Text, useColorModeValue } from '@chakra-ui/react'
 
 interface FooterProps {}
 
@@ -14,7 +14,10 @@ const Footer: NextComponentType<NextPageContext, {}, FooterProps> = () => {
         mt="3rem"
         py={4}
       >
-        <Text color="whiteAlpha.700" textAlign="center">
+        <Text
+          color={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}
+          textAlign="center"
+        >
           © {new Date().getFullYear()} Abhijit Paul
         </Text>
       </Container>
