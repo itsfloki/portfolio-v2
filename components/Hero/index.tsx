@@ -28,7 +28,7 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
           textAlign={{ xs: 'center', md: 'left' }}
         >
           <chakra.span color={useColorModeValue('black', 'white')}>
-            Hey, I'm Abhijit.
+            Hey, I&apos;m Abhijit.
           </chakra.span>
           {BRAND_SUB_TEXT}
         </Heading>
