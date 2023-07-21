@@ -24,7 +24,7 @@ const Hero: NextComponentType<NextPageContext, {}, HeroProps> = () => {
       <Box maxW={{ xs: '95%', md: '65%' }} ml={'1rem'}>
         <Heading
           size={'lg'}
-          color={useColorModeValue('gray.500', 'gray.600')}
+          color={useColorModeValue('gray.600', 'gray.400')}
           textAlign={{ xs: 'center', md: 'left' }}
         >
           <chakra.span color={useColorModeValue('black', 'white')}>

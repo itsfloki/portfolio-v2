@@ -4,7 +4,7 @@ export const BRAND_NAME = 'Abhijit Paul'
 export const BRAND_SUB_TEXT =
   "I'm a blockchain developer and rustlang enthusiast."
 
-export const NavLinks = ['About', 'Blog', 'Projects']
+export const NavLinks = []
 
 export const project_lists = [
   {

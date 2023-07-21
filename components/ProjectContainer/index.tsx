@@ -14,7 +14,11 @@ const ProjectContainer: NextComponentType<
   ProjectContainerProps
 > = () => {
   return (
-    <SectionWrapper id="projects" title="My Projects" desc="">
+    <SectionWrapper
+      id="projects"
+      title="My Projects"
+      desc="Get more details by hovering over the image."
+    >
       <Grid
         templateColumns={{
           base: 'repeat(1, 1fr)',

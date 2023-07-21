@@ -25,7 +25,9 @@ const Navbar: NextComponentType<NextPageContext, {}, {}> = () => {
   return (
     <Box my={{ xs: 0, md: 5 }} pos={'fixed'} w={'full'} top={0} zIndex={1}>
       <Container
-        bg={useColorModeValue('gray.100', 'gray.900')}
+        bg={useColorModeValue('white', 'gray.900')}
+        border="2px solid"
+        borderColor={useColorModeValue('gray.200', 'gray.700')}
         maxW={'4xl'}
         borderRadius={{
           xs: 'none',

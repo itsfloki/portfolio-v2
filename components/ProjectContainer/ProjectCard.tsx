@@ -37,8 +37,8 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
         src={image}
         alt={title}
         borderRadius="md"
-        border="3px solid"
-        borderColor={useColorModeValue('gray.100', 'gray.900')}
+        border="2px solid"
+        borderColor={useColorModeValue('gray.200', 'gray.700')}
       />
 
       <Box
@@ -47,6 +47,8 @@ const ProjectCard: NextComponentType<NextPageContext, {}, ProjectCardProps> = ({
         w="full"
         h="full"
         bg={useColorModeValue('gray.50', 'gray.700')}
+        border="2px solid"
+        borderColor={useColorModeValue('gray.200', 'gray.700')}
         bottom={0}
         p={5}
         opacity={0}
