@@ -19,7 +19,8 @@ export const project_lists = [
   },
   {
     title: 'Shopyle',
-    description: 'Shopyle is an eCommerce store for selling t-shirts online.',
+    description:
+      'Shopyle is a vibrant eCommerce platform, specialized in offering a premium selection of trendy t-shirts for online shoppers.',
     github_link: `https://github.com/${GITHUB_USERNAME}/shopyle-v2.git`,
     live_link: 'https://shiny-mermaid-0a6252.netlify.app',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj1.jpg?raw=true`,
@@ -29,7 +30,7 @@ export const project_lists = [
   {
     title: 'Tweetx',
     description:
-      'A twitter clone where anyone can share his views on a certain topic in simple way.',
+      'A dynamic Twitter-inspired platform that allows users to effortlessly share their views on various topics in a simple and engaging manner.',
     github_link: `https://github.com/${GITHUB_USERNAME}/tweetx.git`,
     live_link: 'https://tweetx-dev.netlify.app/',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj4.png?raw=true`,
@@ -39,7 +40,7 @@ export const project_lists = [
   {
     title: 'Indigram',
     description:
-      'Indigram is a place where user can share images with followers. ',
+      'Indigram, a captivating Instagram clone, empowers users to share their cherished images with followers and indulge in a seamless social media experience.',
     github_link: `https://github.com/${GITHUB_USERNAME}/indigram.git`,
     live_link: 'https://indigram.netlify.app',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj2.jpg?raw=true`,
