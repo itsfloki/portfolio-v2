@@ -56,6 +56,15 @@ export const project_lists = [
     tags: ['html', 'css', 'javascript'],
     category: ['htm', 'js'],
   },
+  {
+    title: 'Rusty Games',
+    description: 'Simple games built with bevy game engine',
+    github_link: `https://github.com/${GITHUB_USERNAME}/rusty-games.git`,
+    live_link: `https://github.com/${GITHUB_USERNAME}/rusty-games.git`,
+    image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj6.gif?raw=true`,
+    tags: ['rust', 'bevy'],
+    category: ['rs'],
+  },
 ]
 
 export const aboutMe = `Hi there, I am Abhijit an aspiring Blockchain Developer. Now I am pursuing my bachelor's degree in CS. Since 4 years I have been experimenting with frontend, backend & blockchain development & built some cool projects. Currently, I am learning Rust & Vue.js.`
