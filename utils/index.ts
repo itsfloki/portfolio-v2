@@ -15,6 +15,7 @@ export const project_lists = [
     live_link: 'https://bitgertswap.com/',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj5.webp?raw=true`,
     tags: ['react', 'typescript', 'solidity'],
+    category: ['sol', 'ts'],
   },
   {
     title: 'Shopyle',
@@ -23,6 +24,7 @@ export const project_lists = [
     live_link: 'https://shiny-mermaid-0a6252.netlify.app',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj1.jpg?raw=true`,
     tags: ['Next.js', 'Express.js', 'Mongodb'],
+    category: ['ts'],
   },
   {
     title: 'Tweetx',
@@ -32,6 +34,7 @@ export const project_lists = [
     live_link: 'https://tweetx-dev.netlify.app/',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj4.png?raw=true`,
     tags: ['Next.js', 'Django', 'MongoDB'],
+    category: ['py', 'ts'],
   },
   {
     title: 'Indigram',
@@ -41,6 +44,17 @@ export const project_lists = [
     live_link: 'https://indigram.netlify.app',
     image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj2.jpg?raw=true`,
     tags: ['react', 'redux', 'firebase'],
+    category: ['js'],
+  },
+  {
+    title: 'Sunnyside',
+    description:
+      'Sunnyside agency landing page design with html, css and Javascript.',
+    github_link: `https://github.com/${GITHUB_USERNAME}/sunnyside-agency-landing-page.git`,
+    live_link: `https://${GITHUB_USERNAME}.github.io/sunnyside-agency-landing-page/`,
+    image: `https://github.com/${GITHUB_USERNAME}/images/blob/main/proj3.jpg?raw=true`,
+    tags: ['html', 'css', 'javascript'],
+    category: ['htm', 'js'],
   },
 ]
 
