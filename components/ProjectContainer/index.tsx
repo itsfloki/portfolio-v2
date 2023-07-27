@@ -60,8 +60,16 @@ const ProjectContainer: NextComponentType<
       title="My Projects"
       desc="Get more details by hovering over the image."
     >
-      <Tabs variant={'enclosed'}>
-        <TabList>
+      <Tabs variant={'line'}>
+        <TabList
+          overflowX="auto"
+          css={{
+            scrollbarWidth: 'none',
+            '::-webkit-scrollbar': { display: 'none' },
+            '-webkit-overflow-scrolling': 'touch',
+            boxShadow: 'inset 0 -2px 0 rgba(0, 0, 0, 0.1)',
+          }}
+        >
           {tabs.map(({ label, icon }, idx) => (
             <Tab key={label + idx}>
               <Stack spacing={2} direction="row" align="center">
