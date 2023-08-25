@@ -19,7 +19,7 @@ const ProfileImage: NextComponentType<NextPageContext, {}, Props> = ({}) => {
       h={size}
     >
       <Avatar
-        src="https://github.com/itsfloki/images/blob/main/abhijit_with_coat.png?raw=true"
+        src="https://github.com/itsfloki/images/blob/main/abhijit_new.png?raw=true"
         size="full"
         top={0}
       />
