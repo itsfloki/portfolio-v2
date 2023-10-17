@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+
+{%- css %}{% include "public/css/hero.css" %}{% endcss %}
+<div class="hero-container">
+  <div class="hero-image">
+      <!-- <img src="https://github.com/itsfloki/images/blob/main/abhijit_new.png?raw=true" alt="Abhijit"> -->
+      <img src="https://avatars.githubusercontent.com/u/55863324?v=4" alt="Abhijit">
+  </div>
+
+  <div class="hero-description">
+    <p>Hey, I'm Abhijit. I love to program low level stuff.</p>
+
+    <ul class="hero-socials">
+      <li><a href="https://github.com/itsfloki" target="_blank">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/itsfloki" target="_blank">LinkedIn</a></li>
+      <li><a href="https://twitter.com/itsfloki9" target="_blank">Twitter</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Stop deleting -->
+
+{{ content | safe }}
