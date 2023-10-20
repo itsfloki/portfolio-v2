@@ -6,7 +6,7 @@ eleventyNavigation:
 ---
 # About Me
 
-Hi, I'm Abhijit, a passionate low-level programmer currently pursuing my
+Hi, I'm Abhijit, a passionate programmer currently pursuing my
 bachelor's degree. When I'm not delving into the intricacies of coding,
 you'll often find me enjoying my two other great loves - watching movies
 and indulging in some thrilling cricket action. My life is all about
