@@ -11,7 +11,6 @@ Bitgert Swap is a decentralized cryptocurrency exchange on bitgert chain that us
 
 #react #typescript #solidity
 
-[<img src="https://img.shields.io/badge/github-repo-green.svg?logo=github">](https://bitgertswap.com/)
 [<img src="https://img.shields.io/badge/open-live-green.svg?logo=netlify">](https://bitgertswap.com/)
 
 ### Shopyle
