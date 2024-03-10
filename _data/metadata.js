@@ -4,7 +4,7 @@ module.exports = {
 	language: "en",
 	description: "I am writing about my experiences as a programmer.",
 	author: {
-		name: "Abhijit Paul",
+		name: "Abhijit",
 		email: "thexeromin@gmail.com",
 		url: "https://devabhijit.in/"
 	}
