@@ -1,26 +1,34 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: My first blog (Project K)
+description: This blog is all about me & my plan...
+date: 2024-03-10
 tags:
-  - another tag
+  - project k
+  - robotics
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Firstly, let me introduce myself. I am Abhijit a small-town boy who wants to 
+build a robot. I don't know anything about robotics but I have a strong desire 
+and some programming skills which I think I could use in this project. It's not 
+a project it's Project K. Don't be confused with the movie called
+[Kalki 2898 AD](https://en.wikipedia.org/wiki/Kalki_2898_AD). 
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+So why am I working on Project K? To answer this question I have to go in my 
+childhood which I think will be a pretty boring stuff for you to read. So just 
+hold on a bit and grab a coffe or tea whichever you preffer. Enough talking 
+nonsense so since childhood I have the desier to build a robot which I could talk
+to anytime as I have only 2 friends. Sometimes they are busy with their personal 
+life so I need someone whome I could talk to and greet me when I came back home.
 
-## Section Header
+Also day by day I will become older and my memory will start to fade and then 
+I will die with having so much regret. So there should be someone who could tell 
+my small small stories, moments, adventures which I have experienced throught 
+my life. I know I can just store these in videos or photos. But I want to tell 
+my story through a person whom I can trust completly as robots are machine which 
+can only do stuff which we tell them to do.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Every Sunday, I will share all my weekly progress through my blog. As life is 
+unpreddictable anything can happen anytime. Although I have the confidence that 
+I will not die until I finish this project.
 
-```diff-js
- // this is a command
- function myCommand() {
-+  let counter = 0;
--  let counter = 1;
-   counter++;
- }
-
- // Test with a line break above this line.
- console.log('Test');
-```
+I don't know if I can finish it or not but I will give my best and make this 
+journy as much adventures as I can.
