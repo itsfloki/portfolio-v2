@@ -31,4 +31,4 @@ unpreddictable anything can happen anytime. Although I have the confidence that
 I will not die until I finish this project.
 
 I don't know if I can finish it or not but I will give my best and make this 
-journy as much adventures as I can.
+journy as much adventurous as I can.
