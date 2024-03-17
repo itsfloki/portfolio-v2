@@ -1,18 +1,17 @@
 ---
-title: My first blog (Project K)
+title: My first blog
 description: This blog is all about me & my plan...
 date: 2024-03-10
 tags:
-  - project k
+  - project nebula
   - robotics
 ---
 Firstly, let me introduce myself. I am Abhijit a small-town boy who wants to
 build a robot. I don't know anything about robotics but I have a strong desire
 and some programming skills which I think I could use in this project. It's not
-a project it's Project K. Don't be confused with the movie called
-[Kalki 2898 AD](https://en.wikipedia.org/wiki/Kalki_2898_AD).
+a project it's Project Nebula.
 
-So why am I working on Project K? To answer this question I have to go in my
+So why am I working on Project Nebula? To answer this question I have to go in my
 childhood which I think will be a pretty boring stuff for you to read. So just
 hold on a bit and grab a coffee or tea whichever you preffer. Enough talking
 nonsense so since childhood I have the desier to build a robot which I could talk
